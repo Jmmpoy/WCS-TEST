@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  // Header
+  &-header {
+    background: #233050;
+    padding: 2em;
+    display: flex;
+
+    div {
+      flex-basis: 50%;
+    }
+
+    .header {
+      &-title {
+        font-size: 1rem;
+        text-align: right;
+        color: white;
+      }
+
+      &-img {
+        text-align: left;
+        img {
+          max-width: 96px;
+        }
+      }
+    }
+  }
+
+  &-members {
+    // width: 90%;
+    // margin: auto;
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10rem;
+    background: #233050;
+    .member-form {
+      padding: 3rem;
+      margin: 2rem;
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+        font-size: 2.5rem;
+        color: white;
+      }
+
+      input {
+        width: 50%;
+        height: 2.5rem;
+        outline: none;
+      }
+
+      button {
+        height: 2.9rem;
+    outline: none;
+    background: white;
+    border: none;
+    cursor: pointer;
+      }
+    }
+
+
+    &-list{
+      list-style-type: none;
+      font-size: 2rem;
+      color: white;
+    }
+  }
+
+ 
+
+  // Footer
+  footer {
+    
+    text-align: center;
+    color: #fff;
+    background: #f76c6c;
+    
+    font-size: 1.5rem;
+  }
+}
